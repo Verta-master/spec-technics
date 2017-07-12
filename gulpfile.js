@@ -123,7 +123,6 @@ gulp.task("build", function(fn) {
     "images",
     "style:production",
     "js:production",
-    "deploy",
     fn
   );
 });
