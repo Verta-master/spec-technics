@@ -87,7 +87,7 @@ gulp.task("js:production", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "fonts/**/*.{woff,woff2}",
+    "fonts/**/*",
     "img/*.{svg,png,jpg,gif}",
     "js/*.js",
     "*.html"
@@ -123,6 +123,7 @@ gulp.task("build", function(fn) {
     "images",
     "style:production",
     "js:production",
+    "deploy",
     fn
   );
 });
