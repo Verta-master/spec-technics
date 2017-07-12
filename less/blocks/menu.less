@@ -1,0 +1,119 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 320px;
+  margin: 0 auto;
+  background-color: @blue;
+}
+
+.menu__search {
+  width: 240px;
+  min-height: 40px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 37px;
+  background-image: url(../img/icons-search.svg);
+  background-repeat: no-repeat;
+  background-position: left 12px center;
+  background-size: 15px;
+}
+
+.menu--closed .menu__list {
+  display: none;
+}
+
+.menu__toggle {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.menu--closed .menu__toggle {
+  background-image: url(../img/icon-menu-ham.svg);
+  width: 30px;
+  height: 19px;
+  margin-left: 9px;
+}
+
+.menu--opened .menu__toggle {
+  background-image: url(../img/icon-menu-cross.svg);
+  width: 23px;
+  height: 23px;
+}
+
+.menu--opened {
+  .menu__list {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  
+  .menu__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 1px solid @grey;
+  }
+  
+  .menu__link {
+    display: inline-block;
+    width: 90%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: @dark-blue;
+  }
+  
+  .menu__sublink {
+    color: @dark-blue;
+  }
+}
+
+.menu__control {
+  display: none;
+  margin-left: auto;
+}
+
+.menu__control:not(checked) + label {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -16px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icons-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+}
+
+.menu__control:checked + label {
+  
+  &::before {
+    transform: rotate(180deg);
+  }
+}
+
+.menu input[type="checkbox"]:checked ~ .menu__sub {
+  display: block;
+}
+
+.menu input[type="checkbox"]:not(checked) ~ .menu__sub {
+  display: none;
+}
