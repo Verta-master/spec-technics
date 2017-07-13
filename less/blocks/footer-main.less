@@ -107,3 +107,67 @@
     margin-bottom: 12px;
   }
 }
+
+//-------------Tablet----------------
+
+@media @tablet {
+  .footer-main {
+    width: 768px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .footer-main input[type="checkbox"]:not(checked) ~ .footer-main__list {
+    display: block;
+  }
+  
+  .footer-main__control + label::before {
+    display: none;
+  }
+  
+  .footer-main__tires,
+  .footer-main__vendors,
+  .footer-main__about {
+    border-bottom: none;
+  }
+  
+  .footer-main__info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-main__tires {
+    width: 48%;
+  }
+  
+  .footer-main__vendors {
+    width: 35%;
+  }
+  
+  .footer-main__item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .footer-main input[type=checkbox]:not(checked)~.footer-main__list,
+  .footer-main input[type=checkbox]:checked ~.footer-main__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 260px;
+  }
+  
+  .footer-main__link span {
+    display: none;
+  }
+  
+  .footer-main__copyright {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+  }
+  
+  .footer-main__web,
+  .footer-main__design {
+    text-align: left;
+  }
+}

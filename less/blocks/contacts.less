@@ -81,3 +81,40 @@
     padding-top: 20px;
   }
 }
+
+//-------------Tablet----------------
+
+@media @tablet {
+  .contacts {
+    width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+  }
+  
+  .contacts__call {
+    width: 50%;
+    display: flex;
+    
+    button {
+      max-height: 40px;
+    }
+  }
+  
+  .contacts__call .contacts__text,
+  .contacts__social .contacts__text {
+    line-height: 1.2;
+    text-align: left;
+    margin-left: 15px;
+  }
+  
+  .contacts__social {
+    display: flex;
+    max-width: 275px;
+  }
+  
+  .contacts__buttons {
+    padding: 0;
+  }
+}

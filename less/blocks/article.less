@@ -85,3 +85,33 @@
     margin-bottom: 15px;
   }
 }
+
+//-------------Tablet----------------
+
+@media @tablet {
+  .article {
+    width: 768px;
+  }
+  
+  .article__item {
+    width: 30%;
+    padding: 0;
+    
+    &:nth-child(2) {
+      padding-left: 0;
+    }
+  
+    &:last-child {
+      display: block;
+    }
+  }
+  
+  .article__list {
+    justify-content: space-between;
+  }
+  
+  .article__img {
+    width: 229px;
+    height: 153px;
+  }
+}

@@ -72,3 +72,24 @@
     }
   }
 }
+
+//-------------Tablet----------------
+
+@media @tablet {
+  .contacts-block {
+    position: static;
+    margin-right: 20px;
+    
+    &--footer {
+      align-items: flex-start;
+      margin-right: 0;
+      width: 50%;
+    }
+    
+    &--footer .contacts-block__link--phone:nth-of-type(2) {
+      position: absolute;
+      left: 50%;
+      top: 30px;
+    }
+  }
+}
