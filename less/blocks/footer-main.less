@@ -1,0 +1,86 @@
+.footer-main {
+  width: 300px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: @blue;
+  color: @dark-blue;
+}
+
+.footer-main__tires,
+.footer-main__vendors,
+.footer-main__about {
+  border-bottom: 1px solid @dark-blue;
+}
+
+.footer-main__title {
+  display: inline-block;
+  margin: 0;
+  width: 90%;
+  text-transform: uppercase;
+  line-height: 45px;
+}
+
+.footer-main__link {
+  color: #fff;
+  
+  &:hover {
+    color: @orange;
+  }
+}
+
+.footer-main__control {
+  display: none;
+  margin-left: auto;
+}
+
+.footer-main__control:not(checked) + label {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 5px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icons-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+}
+
+.footer-main__control:checked + label {
+  
+  &::before {
+    transform: rotate(180deg);
+  }
+}
+
+.footer-main input[type="checkbox"]:checked ~ .footer-main__list {
+  display: block;
+}
+
+.footer-main input[type="checkbox"]:not(checked) ~ .footer-main__list {
+  display: none;
+}
+
+.footer-main__copyright {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-main__web,
+.footer-main__design {
+  line-height: 30px;
+  margin: 0;
+}
+
+.footer-main__web a,
+.footer-main__design a {
+  color: @dark-blue;
+  
+  &:hover {
+    color: @orange;
+  }
+}

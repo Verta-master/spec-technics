@@ -1,0 +1,42 @@
+.features {
+  width: 300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.features__text a {
+  color: @blue;
+  background-image: linear-gradient(to right, rgba(77,130,164,0.33) 0, rgba(77,130,164,0.33) 100%);
+  background-position: 0 14px;
+  background-repeat: repeat-x;
+  background-size: 5px 5px;
+  
+  &:hover {
+    color: @orange;
+    background-image: none;
+  }
+}
+
+.features__text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+  &--list {
+    padding-left: 30px;
+    position: relative;
+  }
+  
+  &--list::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 20px;
+    height: 1px;
+    background-color: @blue;
+  }
+}
+
+.features__right .features__text:last-of-type {
+  margin-bottom: 28px;
+}
