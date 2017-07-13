@@ -498,24 +498,36 @@
         </section>
         
         <section class="slider">
-          <div class="slider__container">
-            <div class="slider__wrapper">
-              <div class="slider__img">
-                <img src="img/slide-1-desktop.jpg" alt="Магазин спецтехники" width="1000" height="437">
-              </div>
-              <div class="slider__img">
-                <img src="img/slide-1-desktop.jpg" alt="Магазин спецтехники" width="1000" height="437">
-              </div>
-              <div class="slider__img">
-                <img src="img/slide-1-desktop.jpg" alt="Магазин спецтехники" width="1000" height="437">
-              </div>
-              <div class="slider__img">
-                <img src="img/slide-1-desktop.jpg" alt="Магазин спецтехники" width="1000" height="437">
-              </div>
-            </div>
-          <div class="swiper-pagination"></div>
-          </div>
-          <h2 class="title-h2 title-h2--main">Несколько складов для самовывоза <span>или доставка в день заказа</span></h2>
+          <h2 class="title-h2 title-h2--main"><b>Несколько складов для самовывоза</b><span>или доставка в день заказа</span></h2>
+          <ul class="slider__container fotorama"
+           data-loop="true"
+           data-keyboard="true">
+            <li class="slider__img slider__show">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slide-1-desktop.jpg">
+                <img src="img/slide-1-mobile.jpg" alt="Магазин спецтехники" width="320" height="173">
+              </picture>
+            </li>
+            <li class="slider__img">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slide-1-desktop.jpg">
+                <img src="img/slide-1-mobile.jpg" alt="Магазин спецтехники" width="320" height="173">
+              </picture>
+            </li>
+            <li class="slider__img">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slide-1-desktop.jpg">
+                <img src="img/slide-1-mobile.jpg" alt="Магазин спецтехники" width="320" height="173">
+              </picture>
+            </li>
+            <li class="slider__img">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slide-1-desktop.jpg">
+                <img src="img/slide-1-mobile.jpg" alt="Магазин спецтехники" width="320" height="173">
+              </picture>
+            </li>
+          </ul>
+          
           <form action="#" method="post" class="form">
             <p class="form__title"><span>Бесплатная</span>консультация специалиста</p>
             <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
@@ -796,6 +808,7 @@
       </footer>
     </div>
     
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/picturefill.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/swiper.min.js"></script>
@@ -810,5 +823,6 @@
         freeMode: true
       });
     </script>
+    <script src="js/fotorama.js"></script>
 </body>
 </html>

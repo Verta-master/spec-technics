@@ -16,3 +16,48 @@
   stroke-width: 2.5px;
   fill: none;
 }
+
+.category__filter {
+  padding: 0 10px;
+}
+
+.category__h3 {
+  font-size: 18px;
+  color: @blue;
+  font-weight: 300;
+}
+
+.category__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.category__item {
+  background-color: @grey;
+  border-radius: 3px;
+  width: 92px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+  &:nth-child(3n),
+  &:last-child {
+    margin-right: 0;
+  }
+  
+  &:hover {
+    background-color: @blue;
+    
+    .category__link {
+      color: #fff;
+    }
+  }
+}
+
+.category__link {
+  font-size: 18px;
+  line-height: 40px;
+  color: @blue;
+}
