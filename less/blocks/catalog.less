@@ -1,6 +1,7 @@
 .catalog {
   width: 300px;
   padding: 0 10px;
+  padding-top: 10px;
   margin: 0 auto;
 }
 
@@ -48,12 +49,14 @@
   color: @blue;
   text-align: center;
   margin-bottom: 0;
+  margin-top: 10px;
 }
 
 .catalog__type {
   text-transform: uppercase;
   color: @grey;
   margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .catalog__buy {
@@ -71,4 +74,57 @@
   display: block;
   margin-top: 10px;
   margin-bottom: 30px;
+}
+
+//-------------Mobile-480--------------
+
+@media @mobile {
+  .catalog {
+    width: 440px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .catalog__item {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 10px;
+    
+    &:nth-child(2),
+    &:nth-child(5) {
+      display: flex;
+    }
+    
+    &:nth-child(2),
+    &:nth-child(5) {
+      padding-left: 10px;
+      padding-right: 0;
+    }
+  }
+  
+  .catalog__img {
+    width: 210px;
+    height: 113px;
+  }
+  
+  .catalog__name {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .catalog__link {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+    &--main {
+      width: 230px;
+    }
+  }
 }

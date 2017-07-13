@@ -13,12 +13,20 @@
 
 .fotorama {
   width: 100%;
-  
-  img {
-    ;
-  }
 }
 
 .fotorama__stage {
   max-height: 173px;
+}
+
+//-------------Mobile-480--------------
+
+@media @mobile {
+  .fotorama__stage {
+    max-height: 260px;
+  }
+  
+  .fotorama__nav__shaft {
+    left: -170px;
+  }
 }

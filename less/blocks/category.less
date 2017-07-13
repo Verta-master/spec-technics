@@ -5,6 +5,7 @@
 
 .category__name {
   margin: 0;
+  line-height: 16px;
 }
 
 .category__svg {
@@ -25,6 +26,7 @@
   font-size: 18px;
   color: @blue;
   font-weight: 300;
+  margin-top: 0;
 }
 
 .category__list {
@@ -60,4 +62,22 @@
   font-size: 18px;
   line-height: 40px;
   color: @blue;
+}
+
+//-------------Mobile-480--------------
+
+@media @mobile {
+  .category {
+    width: 480px;
+    padding-bottom: 20px;
+  }
+  
+  .category__item:last-child,
+  .category__item:nth-child(3n) {
+    margin-right: 10px;
+  }
+  
+  .category__filter {
+    padding: 0 20px;
+  }
 }

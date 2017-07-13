@@ -2,12 +2,13 @@
   border: 3px solid @grey;
   margin: 20px 10px;
   padding: 25px;
+  padding-top: 20px;
   
   input {
     width: 100%;
     border-bottom: 1px solid @grey;
     line-height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     padding: 0 15px;
     box-sizing: border-box;
   }
@@ -17,6 +18,7 @@
   }
   
   input:focus {
+    line-height: 38px;
     border-bottom: 3px solid @blue;
   }
 }
@@ -25,6 +27,7 @@
   font-size: 24px;
   font-weight: 700;
   text-align: center;
+  line-height: 27px;
   margin-top: 0;
   
   span {
@@ -36,4 +39,23 @@
 .form__btn {
   max-width: 100%;
   margin-top: 20px;
+}
+
+//-------------Mobile-480--------------
+
+@media @mobile {
+  .form {
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .form__title {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .form__btn {
+    width: 100%;
+  }
 }

@@ -1,5 +1,5 @@
 .contacts-address {
-  padding-top: 15px;
+  padding-top: 13px;
   
   svg {
     width: 18px;
@@ -17,8 +17,24 @@
   justify-content: flex-start;
   align-items: center;
   padding-left: 29px;
+  
+  &--footer {
+    padding-left: 0;
+  }
 }
 
 .contacts-address__text {
   margin: 0;
+}
+
+//-------------Mobile-480--------------
+
+@media @mobile {
+  .contacts-address__wrap {
+    padding-left: 0;
+  }
+  
+  .contacts-address {
+    padding-top: 0;
+  }
 }

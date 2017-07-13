@@ -501,7 +501,8 @@
           <h2 class="title-h2 title-h2--main"><b>Несколько складов для самовывоза</b><span>или доставка в день заказа</span></h2>
           <ul class="slider__container fotorama"
            data-loop="true"
-           data-keyboard="true">
+           data-keyboard="true"
+           data-autoplay="3000">
             <li class="slider__img slider__show">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/slide-1-desktop.jpg">
@@ -577,7 +578,7 @@
               <a href="#" class="catalog__buy">27 300₽</a>
             </li>
           </ul>
-          <a href="catalog.html" class="btn catalog__link">Перейти в каталог</a>
+          <a href="catalog.html" class="btn catalog__link catalog__link--main">Перейти в каталог</a>
         </section>
         
         <section class="article">
@@ -587,7 +588,7 @@
               <a href="#" class="article__link">
                 <img src="img/article-1.jpg" alt="Алтайские шины" class="article__img" width="306" height="205">
                 <h3 class="article__title">Алтайские шины для спецтехники большой шаг вперёд?</h3>
-                <p class="article__text">Специальные шины для строительной техники используются в сложных условиях. Они достаточно быстро изнашиваются, что заставляет владельца транспорта следить за состоянием колёс. Однако выход из строя шин для строительной техники может быть связан не с износом…</p>
+                <p class="article__text">Специальные шины для строительной техники используются в сложных условиях. Они достаточно быстро изнашиваются, что заставляет владельца транспорта следить за состоянием колёс.<span> Однако выход из строя шин для строительной техники может быть связан не с износом…</span></p>
                 <p class="article__date">26 февраля 2016 г.</p>
               </a>
             </li>
@@ -595,7 +596,7 @@
               <a href="#" class="article__link">
                 <img src="img/article-2.jpg" alt="Алтайские шины" class="article__img" width="306" height="205">
                 <h3 class="article__title">Алтайские шины для спецтехники большой шаг вперёд?</h3>
-                <p class="article__text">Специальные шины для строительной техники используются в сложных условиях. Они достаточно быстро изнашиваются, что заставляет владельца транспорта следить за состоянием колёс. Однако выход из строя шин для строительной техники может быть связан не с износом…</p>
+                <p class="article__text">Специальные шины для строительной техники используются в сложных условиях. Они достаточно быстро изнашиваются, что заставляет владельца транспорта следить за состоянием колёс.<span> Однако выход из строя шин для строительной техники может быть связан не с износом…</span></p>
                 <p class="article__date">26 февраля 2016 г.</p>
               </a>
             </li>
@@ -603,7 +604,7 @@
               <a href="#" class="article__link">
                 <img src="img/article-3.jpg" alt="Алтайские шины" class="article__img" width="306" height="205">
                 <h3 class="article__title">Алтайские шины для спецтехники большой шаг вперёд?</h3>
-                <p class="article__text">Специальные шины для строительной техники используются в сложных условиях. Они достаточно быстро изнашиваются, что заставляет владельца транспорта следить за состоянием колёс. Однако выход из строя шин для строительной техники может быть связан не с износом…</p>
+                <p class="article__text">Специальные шины для строительной техники используются в сложных условиях. Они достаточно быстро изнашиваются, что заставляет владельца транспорта следить за состоянием колёс.<span> Однако выход из строя шин для строительной техники может быть связан не с износом…</span></p>
                 <p class="article__date">26 февраля 2016 г.</p>
               </a>
             </li>
@@ -611,7 +612,7 @@
         </section>
         
         <section class="features">
-          <h2 class="title-h2">Шины для JCB 3CX, JCB 3CX Super Sitemaster, CASE 695, TEREX 970, TEREX 980</h2>
+          <h2 class="title-h2 title-h2--features">Шины для JCB 3CX, JCB 3CX Super Sitemaster, CASE 695, TEREX 970, TEREX 980</h2>
           <div class="features__block">
             <div class="features__left">
               <h3 class="title-h3">Размеры шин для экскаватора JCB 3CX Contractor и JCB 3CX SUPER: в чем различия?</h3>
@@ -651,7 +652,7 @@
           <a href="+89253323253" class="contacts-block__link contacts-block__link--phone">+8 (925) 332-3253</a>
         </div>
         <div class="contacts-address contacts-address--footer">
-          <div class="contacts-address__wrap">
+          <div class="contacts-address__wrap contacts-address__wrap--footer">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.5 28.9" style="enable-background:new 0 0 23.5 28.9;" xml:space="preserve">
               <g>
                 <path fill="#ffffff" d="M11.7,5.9c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9c3.3,0,5.9-2.7,5.9-5.9C17.6,8.6,15,5.9,11.7,5.9L11.7,5.9z
@@ -717,7 +718,7 @@
             </svg>
             </a>
           </div>
-          <p class="contacts__text"></p>
+          <p class="contacts__text">Присоединяйтесь к нам!</p>
         </div>
       </footer>
       <footer class="footer-main">
@@ -850,7 +851,7 @@
         pagination: '.swiper-pagination',
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        slidesPerView: 2,
+        slidesPerView: "auto",
         paginationClickable: true,
         spaceBetween: 30,
         freeMode: true

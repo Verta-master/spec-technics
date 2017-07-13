@@ -1,7 +1,8 @@
 .contacts {
   width: 300px;
   margin: 0 auto;
-  padding: 25px 10px;
+  padding: 35px 10px;
+  padding-top: 30px;
   background-color: @bg-blue;
   color: #fff;
   display: flex;
@@ -21,6 +22,9 @@
 
 .contacts__buttons {
   display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 .contacts__btn {
@@ -58,4 +62,18 @@
 
 .contacs__fill {
   fill: #fff;
+}
+
+//-------------Mobile-480--------------
+
+@media @mobile {
+  .contacts {
+    width: 440px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .contacts__call {
+    width: 100%;
+  }
 }

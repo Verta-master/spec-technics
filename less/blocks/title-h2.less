@@ -1,26 +1,59 @@
 .title-h2 {
   font-size: 24px;
   text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
   
   &--main {
     font-size: 20px;
     color: #fff;
-    background-color: @orange;
     margin: 0;
     
     b {
       display: block;
       padding: 15px 60px;
+      background-color: @orange;
     }
     
     span {
       display: block;
       background-color: @blue;
-      padding: 15px 0;
+      padding: 12px 0;
     }
   }
   
   &--article {
     display: none;
+  }
+  
+  &--features {
+    line-height: 28px;
+  }
+}
+
+//-------------Mobile-480--------------
+
+@media @mobile {
+  .title-h2--main {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    z-index: 25;
+    text-align: left;
+    
+    b {
+      padding-left: 20px;
+      padding-right: 0;
+      width: 440px;
+    }
+    
+    span {
+      padding-left: 20px;
+      width: 355px;
+    }
+  }
+  
+  .title-h2--article {
+    display: block;
   }
 }
