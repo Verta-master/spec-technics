@@ -113,6 +113,7 @@
 @media @tablet {
   .footer-main {
     width: 768px;
+    box-sizing: border-box;
     padding-bottom: 35px;
     position: relative;
   }
@@ -154,7 +155,11 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 260px;
+    
+  }
+  
+  .footer-main__list {
+    max-height: 260px;
   }
   
   .footer-main__link span {
@@ -178,5 +183,43 @@
 @media @desktop {
   .footer-main {
     width: 1000px;
+    padding-bottom: 0;
+  }
+  
+  .footer-main__copyright {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 130px;
+    padding-bottom: 30px;
+  }
+  
+  .footer-main__info {
+    padding-top: 40px;
+  }
+  
+  .footer-main__tires {
+    width: 335px;
+    position: relative;
+  }
+  
+  .footer-main__vendors {
+    width: 475px;
+    position: relative;
+  }
+  
+  .footer-main__list--vendors {
+    max-height: 175px;
+  }
+  
+  .footer-main__tires::after,
+  .footer-main__vendors::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 1px;
+    height: 92%;
+    background-color: @dark-blue;
   }
 }

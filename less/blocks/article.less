@@ -91,6 +91,7 @@
 @media @tablet {
   .article {
     width: 768px;
+    box-sizing: border-box;
   }
   
   .article__item {
@@ -121,5 +122,18 @@
 @media @desktop {
   .article {
     width: 1000px;
+  }
+  
+  .article__img {
+    width: 306px;
+    height: 205px;
+  }
+  
+  .article__list {
+    justify-content: space-between;
+  }
+  
+  .article__title {
+    font-size: 24px;
   }
 }

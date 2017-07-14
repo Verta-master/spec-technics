@@ -69,6 +69,12 @@
   line-height: 40px;
   background-color: @grey;
   border-radius: 3px;
+  
+  &:hover,
+  &:active {
+    background-color: @blue;
+    color: #fff;
+  }
 }
 
 .catalog__link {
@@ -201,5 +207,51 @@
 @media @desktop {
   .catalog {
     width: 1000px;
+  }
+  
+  .catalog__item {
+    margin-right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 33%;
+    
+    &:nth-child(2),
+    &:nth-child(5) {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-right: 0;
+    }
+  }
+  
+  .catalog__list {
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: 33.3%;
+      top: 25px;
+      width: 1px;
+      height: 92%;
+      background-color: @grey;
+    }
+    
+    &::after {
+      content: "";
+      position: absolute;
+      right: 33.3%;
+      top: 25px;
+      width: 1px;
+      height: 92%;
+      background-color: @grey;
+    }
+  }
+  
+  .catalog__link {
+    margin-left: 30px;
+    
+    &--main {
+      margin-left: auto;
+    }
   }
 }

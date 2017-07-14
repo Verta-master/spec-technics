@@ -87,11 +87,13 @@
 @media @tablet {
   .contacts {
     width: 768px;
+    box-sizing: border-box;
     padding-top: 40px;
     padding-bottom: 40px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: stretch;
     position: relative;
   }
   
@@ -126,5 +128,32 @@
 @media @desktop {
   .contacts {
     width: 1000px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .contacts__social {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+  }
+  
+  .contacts__call {
+    flex-direction: column;
+    width: 25%;
+    
+    button {
+      max-width: 180px;
+      min-height: 45px;
+    }
+  }
+  
+  .contacts__call .contacts__text,
+  .contacts__social .contacts__text {
+    margin-left: 0;
+    margin-top: 10px;
   }
 }

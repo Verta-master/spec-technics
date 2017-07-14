@@ -1,6 +1,7 @@
 .category {
-  width: 320px;
+  width: 300px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .category__name {
@@ -67,7 +68,8 @@
 
 @media @mobile {
   .category {
-    width: 480px;
+    width: 440px;
+    padding: 0 20px;
     padding-bottom: 17px;
   }
   
@@ -75,11 +77,7 @@
   .category__item:nth-child(3n) {
     margin-right: 10px;
   }
-  
-  .category__filter {
-    padding: 0 20px;
-  }
-  
+
   .category__h3 {
     margin-bottom: 0;
   }
@@ -94,6 +92,7 @@
 @media @tablet {
   .category {
     width: 768px;
+    box-sizing: border-box;
   }
 }
 
@@ -102,5 +101,14 @@
 @media @desktop {
   .category {
     width: 1000px;
+  }
+  
+  .category__filter {
+    display: flex;
+  }
+  
+  .category__h3 {
+    min-width: 110px;
+    margin-right: 10px;
   }
 }
