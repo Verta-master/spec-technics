@@ -45,16 +45,22 @@
   .contacts-address {
     display: flex;
     justify-content: space-between;
+    padding-top: 13px;
     
     &--footer {
       margin-bottom: 0;
+      padding-top: 0;
       flex-direction: column;
       justify-content: flex-start;
+      
+      .contacts-address__wrap {
+        margin-top: 20px;
+      }
     }
   }
   
   .contacts-address__wrap:first-of-type {
-    margin-top: 10px;
+    margin-right: 25px;
   }
 }
 
@@ -62,6 +68,15 @@
 
 @media @desktop {
   .contacts-address--footer {
-    width: 30%;
+    width: 265px;
+  }
+  
+  .contacts-address {
+    padding-top: 0;
+  }
+  
+  .contacts-address--footer .contacts-address__wrap {
+    margin-top: 15px;
+    margin-right: 0;
   }
 }

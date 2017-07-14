@@ -70,10 +70,19 @@
   background-color: @grey;
   border-radius: 3px;
   
+  span {
+    display: none;
+  }
+  
   &:hover,
   &:active {
     background-color: @blue;
     color: #fff;
+  }
+  
+  &:hover span,
+  &:active span {
+    display: inline;
   }
 }
 
@@ -207,18 +216,29 @@
 @media @desktop {
   .catalog {
     width: 1000px;
+    padding-top: 35px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .catalog__img {
+    width: 260px;
+    height: 139px;
   }
   
   .catalog__item {
     margin-right: 0;
-    padding-left: 16px;
-    padding-right: 16px;
-    width: 33%;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 25px;
+    padding-bottom: 32px;
+    width: 260px;
+    box-sizing: content-box;
     
     &:nth-child(2),
     &:nth-child(5) {
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-left: 35px;
+      padding-right: 35px;
       margin-right: 0;
     }
   }
@@ -252,6 +272,8 @@
     
     &--main {
       margin-left: auto;
+      margin-top: 0;
+      margin-bottom: 50px;
     }
   }
 }

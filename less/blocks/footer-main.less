@@ -100,7 +100,7 @@
   }
   
   .footer-main__link {
-    line-height: 28px;
+    line-height: 29px;
   }
   
   .footer-main__item:last-child {
@@ -135,7 +135,7 @@
   .footer-main__info {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 25px;
   }
   
   .footer-main__tires {
@@ -158,8 +158,8 @@
     
   }
   
-  .footer-main__list {
-    max-height: 260px;
+  .footer-main__list--vendors {
+    height: 270px;
   }
   
   .footer-main__link span {
@@ -192,10 +192,12 @@
     justify-content: space-between;
     padding-right: 130px;
     padding-bottom: 30px;
+    padding-top: 30px;
   }
   
   .footer-main__info {
-    padding-top: 40px;
+    padding-top: 45px;
+    justify-content: flex-start;
   }
   
   .footer-main__tires {
@@ -203,13 +205,14 @@
     position: relative;
   }
   
-  .footer-main__vendors {
-    width: 475px;
-    position: relative;
+  .footer-main__list--vendors {
+    height: 175px;
   }
   
-  .footer-main__list--vendors {
-    max-height: 175px;
+  .footer-main__vendors {
+    width: 445px;
+    padding-left: 35px;
+    position: relative;
   }
   
   .footer-main__tires::after,
@@ -219,7 +222,20 @@
     top: 15px;
     right: 0;
     width: 1px;
-    height: 92%;
+    height: 90%;
     background-color: @dark-blue;
+  }
+  
+  .footer-main__link span {
+    display: inline;
+  }
+  
+  .footer-main__about {
+    padding-left: 35px;
+  }
+  
+  .footer-main__web,
+  .footer-main__design {
+    font-size: 14px;
   }
 }

@@ -41,7 +41,8 @@
   .info-menu {
     display: flex;
     flex-wrap: wrap;
-    width: 165px;
+    justify-content: space-between;
+    width: 175px;
     
     &--mobile {
       display: none;
@@ -73,5 +74,9 @@
     &:nth-child(6) {
       order: 6;
     }
+  }
+  
+  .info-menu__link {
+    line-height: 28px;
   }
 }

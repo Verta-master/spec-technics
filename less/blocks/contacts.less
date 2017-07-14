@@ -89,7 +89,7 @@
     width: 768px;
     box-sizing: border-box;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -100,9 +100,11 @@
   .contacts__call {
     width: 50%;
     display: flex;
+    margin-top: 15px;
     
     button {
-      max-height: 40px;
+      max-height: 45px;
+      max-width: 180px;
     }
   }
   
@@ -113,9 +115,14 @@
     margin-left: 15px;
   }
   
+  .contacts__call .contacts__text {
+    max-width: 120px;
+  }
+  
   .contacts__social {
     display: flex;
     max-width: 275px;
+    margin-top: 15px;
   }
   
   .contacts__buttons {
@@ -129,25 +136,31 @@
   .contacts {
     width: 1000px;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-end;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
   }
   
   .contacts__social {
     flex-direction: column;
     align-items: flex-start;
     width: 20%;
+    margin-top: 0;
   }
   
   .contacts__call {
     flex-direction: column;
-    width: 25%;
+    width: 235px;
+    margin-top: 0;
     
     button {
       max-width: 180px;
       min-height: 45px;
+    }
+    
+    .contacts__text {
+      max-width: 100%;
     }
   }
   

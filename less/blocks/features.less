@@ -71,14 +71,11 @@
     width: 768px;
     box-sizing: border-box;
     padding-bottom: 20px;
-  }
-  
-  .features__left {
-    padding-top: 20px;
+    padding-top: 30px;
   }
   
   .features__right {
-    padding-top: 30px;
+    padding-top: 10px;
   }
 }
 
@@ -87,6 +84,8 @@
 @media @desktop {
   .features {
     width: 1000px;
+    padding-top: 40px;
+    padding-bottom: 30px;
   }
   
   .features__block {
@@ -100,6 +99,10 @@
   }
   
   .features__right {
-    padding-top: 20px;
+    padding-top: 0;
+  }
+  
+  .features__right .features__text:last-of-type {
+    margin-bottom: 10px;
   }
 }

@@ -25,6 +25,14 @@
     background-color: rgba(77,130,164,0.33);
   }
     
+  &--mail:hover {
+    color: @orange;
+    
+    &::after {
+      display: none;
+    }
+  }
+    
   &--phone {
     color: #fff;
     font-size: 26px;
@@ -38,6 +46,10 @@
     color: #fff;
     margin-bottom: 15px;
     margin-top: 15px;
+    
+    &:hover {
+      color: @orange;
+    }
   }
 }
 
@@ -78,14 +90,23 @@
 @media @tablet {
   .contacts-block {
     position: static;
-    margin-right: 20px;
+    margin-right: 30px;
     
     &--footer {
       align-items: flex-start;
       margin-right: 0;
       margin-bottom: 0;
       width: 50%;
+      
+      .contacts-block__mail {
+        margin-top: 20px;
+      }
     }    
+  }
+  
+  .contacts-block__link {
+    margin-bottom: 0;
+    margin-top: 0;
   }
   
   .contacts-block__link--phone {
@@ -102,7 +123,11 @@
   }
   
   .contacts-block--footer {
-    width: 30%;
+    width: 275px;
+    
+    .contacts-block__mail {
+      margin-top: 17px;
+    }
   }
   
   .contacts-block__mail {
