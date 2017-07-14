@@ -168,3 +168,124 @@
     z-index: 30;
   }
 }
+
+//-------------Desktop-----------------
+
+@media @desktop {
+  .menu {
+    width: 1000px;
+  }
+  
+  .menu__search {
+    width: 155px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .menu__toggle {
+    display: none;
+  }
+  
+  .menu--closed .menu__list,
+  .menu--opened .menu__list {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    max-width: 800px;
+  }
+  
+  .menu__link {
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .menu__control:not(checked)+label::before,
+  .menu__control:checked+label::before {
+    display: none;
+  }
+  
+  .menu__item {
+    position: relative;
+    flex-grow: 1;
+    
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(5) {
+      
+      &::after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        width: 16px;
+        height: 16px;
+        background-image: url(../img/icons-arrow-down.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+      }
+    }
+    
+    &:last-child {
+      display: none;
+    }
+  }
+
+  .menu input[type=checkbox]:not(checked)~.menu__sub,
+  .menu input[type=checkbox]:checked~.menu__sub {
+    display: none;
+  }
+  
+  .menu__list .menu__item:hover .menu__sub {
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: -10px;
+    width: 266px;
+    padding-left: 27px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 8px 8px 0px rgba(77, 130, 164, 0.31);
+  }
+  
+  .menu__sub .menu__sublink {
+    color: @blue;
+    position: relative;
+    
+    &:hover {
+      color: @orange;
+    }
+    
+    &:hover::after {
+      display: none;
+    }
+  }
+  
+  .menu__sub .menu__subitem {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .menu__sub .menu__sublink::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(77,130,164,0.33);
+  }
+  
+  .menu {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .menu__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

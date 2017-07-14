@@ -142,8 +142,13 @@
     box-sizing: border-box;
   }
   
+  .catalog__list {
+    justify-content: center;
+  }
+  
   .catalog__item {
     width: 230px;
+    margin-right: 19px;
     padding-right: 0;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -153,9 +158,14 @@
       display: flex;
     }
     
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    
     &:nth-child(2),
     &:nth-child(5) {
       padding-left: 0;
+      margin-right: 19px;
     }
     
     &:nth-child(5)::after,
@@ -183,5 +193,13 @@
     padding-left: 0;
     padding-right: 0;
     max-width: 229px;
+  }
+}
+
+//-------------Desktop-----------------
+
+@media @desktop {
+  .catalog {
+    width: 1000px;
   }
 }
