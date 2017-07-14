@@ -41,7 +41,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
   
-  span {
+  span, b {
     display: none;
   }
 }
@@ -142,9 +142,35 @@
     font-size: 24px;
     line-height: 32px;
     padding-right: 20px;
+    background-position: 0 22px;
   }
   
   .article__text span {
+    display: inline;
+  }
+}
+
+//-------------PC-----------------
+
+@media @pc {
+  .article {
+    width: 1280px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 45px;
+    padding-bottom: 25px;
+  }
+  
+  .article__item {
+    width: 386px;
+  }
+  
+  .article__img {
+    width: 386px;
+    height: 258px;
+  }
+  
+  .article__text b {
     display: inline;
   }
 }

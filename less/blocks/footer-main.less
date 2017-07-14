@@ -239,3 +239,52 @@
     font-size: 14px;
   }
 }
+
+//-------------PC-----------------
+
+@media @pc {
+  .footer-main {
+    width: 1400px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+  .footer-main__info {
+    width: 1220px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 45px;
+    padding-right: 105px;
+  }
+  
+  .footer-main__copyright {
+    width: 1400px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: @grey;
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-top: 50px;
+  }
+  
+  .footer-main__web,
+  .footer-main__design,
+  .footer-main__web a,
+  .footer-main__design a {
+    color: #999;
+  }
+  
+  .footer-main__vendors {
+    padding-left: 0;
+  }
+  
+  .footer-main__about {
+    padding-left: 0;
+  }
+  
+  .footer-main__tires::after {
+    right: -50px;
+  }
+}

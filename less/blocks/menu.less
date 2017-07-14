@@ -41,6 +41,7 @@
 
 .menu--opened .menu__toggle {
   background-image: url(../img/icon-menu-cross.svg);
+  background-size: contain;
   width: 23px;
   height: 23px;
 }
@@ -287,5 +288,18 @@
   .menu__item {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+//-------------PC-----------------
+
+@media @pc {
+  .menu {
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  .menu__search {
+    width: 240px;
   }
 }
