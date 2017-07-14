@@ -29,3 +29,24 @@
     right: -15px;
   }
 }
+
+.breadcrumbs__link:hover {
+  color: @orange;
+  
+  &::before {
+    display: none;
+  }
+}
+
+//-------------Mobile-480----------------
+
+@media @mobile {
+  .breadcrumbs {
+    width: 440px;
+    padding-bottom: 22px;
+  }
+  
+  .breadcrumbs__link::after {
+    right: -25px;
+  }
+}
