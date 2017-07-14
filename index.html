@@ -675,7 +675,7 @@
           </div>
         </div>
         <div class="contacts__call">
-          <button type="button" class="btn">Обратный звонок</button>
+          <button type="button" class="btn feedback">Обратный звонок</button>
           <p class="contacts__text">Перезвоним через 5 минут</p>
         </div>
         <div class="contacts__social">
@@ -846,6 +846,26 @@
         </div>
       </footer>
     </div>
+    
+    <div class="modal">
+      <div class="modal__header">
+        <p class="modal__title">Обратный звонок</p>
+        <button class="modal__close"></button>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text">Оставьте свой номер телефона и мы перезвоним вам в течение 15 минут</p>
+        <form action="#" method="post" class="modal__form">
+          <input type="text" name="your-name" id="your-name" placeholder="Имя">
+          <input type="tel" name="your-phone" id="your-phone" placeholder="Номер телефона">
+          <button class="btn modal__btn" type="submit">Отправить</button>
+        </form>
+      </div>
+      <div class="modal__body modal__body--thank">
+        <p class="modal__text"><span>Спасибо за заявку!</span>Не выключайте, пожалуйста, свой телефон. До связи :)</p>
+        <button class="modal__end" type="button">ЗАкрыть</button>
+      </div>
+    </div>
+    <div class="modal-overlay"></div>
     
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/picturefill.min.js"></script>
