@@ -52,6 +52,14 @@
   &--main::after {
     height: 8px;
   }
+    
+  &:hover {
+    color: @orange;
+  }
+
+  &:hover::after {
+    display: none;
+  }
 }
 
 .data__wrap {
@@ -146,5 +154,52 @@
   
   .data__work {
     padding-bottom: 20px;
+  }
+}
+
+//-------------Tablet--------------------
+
+@media @tablet {
+  .data {
+    width: 728px;
+    padding-top: 32px;
+    justify-content: flex-start;
+  }
+  
+  .data-text--main,
+  .data__mail--main {
+    font-size: 28px;
+  }
+  
+  .data__write {
+    width: 40%;
+    padding-left: 40px;
+  }
+  
+  .data__address {
+    width: 728px;
+    justify-content: flex-start;
+    
+    .data-text {
+      padding-left: 40px;
+    }
+  }
+  
+  .data__name {
+    min-width: 34%;
+  }
+  
+  .data-container {
+    width: 728px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+  }
+  
+  .data__work {
+    padding-left: 25px;
   }
 }
