@@ -421,8 +421,8 @@
   <div class="modal-overlay"></div>
 
   <script src="js/script.js"></script>
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
   <script>
+    function initMap() {
     var latlng = new google.maps.LatLng("55.740299", "37.381836");
     var myOptions = {
       zoom: 12,
@@ -445,7 +445,8 @@
         scaledSize: new google.maps.Size(86, 107)
       }
     });
+    }
   </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdKRObFHsn0tzja-3HLw153tSibJNmWJY&callback=initMap" async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeOpc6HENUQsgkICmD4ENtkQ6AOYLMnXE&callback=initMap" async defer></script>
 </body>
 </html>
