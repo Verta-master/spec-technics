@@ -9,8 +9,8 @@
 <body>
   <header class="header-main">
     <div class="info">
-      <a href="index.html" class="logo">
-        <img src="img/logojcb.png" alt="Логотип JCB шина" class="logo__img" width="197" height="53">
+      <a href="index.html">
+        <img src="img/logojcb.png" alt="Логотип JCB шина" class="logo" width="197" height="53">
       </a>
       <ul class="info-menu">
         <li class="info-menu__item"><a href="#" class="info-menu__link">Медиа</a></li>
@@ -18,7 +18,7 @@
         <li class="info-menu__item"><a href="#" class="info-menu__link">Вакансии</a></li>
         <li class="info-menu__item"><a href="#" class="info-menu__link">Новости</a></li>
         <li class="info-menu__item"><a href="#" class="info-menu__link">Доставка</a></li>
-        <li class="info-menu__item"><a class="info-menu__link">Контакты</a></li>
+        <li class="info-menu__item"><a href="contacts.html" class="info-menu__link">Контакты</a></li>
       </ul>
       <div class="info__block">
         <div class="contacts-block">
@@ -111,7 +111,7 @@
             <li class="info-menu__item"><a href="#" class="info-menu__link">Вакансии</a></li>
             <li class="info-menu__item"><a href="#" class="info-menu__link">Новости</a></li>
             <li class="info-menu__item"><a href="#" class="info-menu__link">Доставка</a></li>
-            <li class="info-menu__item"><a class="info-menu__link">Контакты</a></li>
+            <li class="info-menu__item"><a href="contacts.html" class="info-menu__link">Контакты</a></li>
           </ul>
         </li>
       </ul>
@@ -123,78 +123,55 @@
     <section class="breadcrumbs">
       <div class="breadcrumbs__wrap">
         <a href="index.html" class="breadcrumbs__link">Главная</a>
+        <a href="news.html" class="breadcrumbs__link">Новости</a>
       </div>
-      <h1 class="title-h1 title-h1--contacts"><span>Наши контакты</span><b>Контакты</b></h1>
+      <h1 class="title-h1 title-h1--article">Продление акции: скидки на шины Solideal до 20&nbsp;ноября</h1>
     </section>
-    
-    <section class="data">
-      <div class="data__call">
-        <h3 class="data-title">Звоните!</h3>
-        <div class="data__wrap">
-          <a href="+74996492982" class="data-text data-text--main">+7 (499) 649-29-82</a>
-          <a href="88005000642" class="data-text">8 (800) 5000-642</a>
-          <a href="89253323253" class="data-text">8 (925) 332-3253</a>
-        </div>
-      </div>
-      <div class="data__write">
-        <h3 class="data-title">Пишите!</h3>
-        <div class="data__wrap">
-          <a href="mailto:sales@shinajcb.ru" class="data__mail data__mail--main">sales@shinajcb.ru</a>
-          <p class="data-text">Для заказа шин: <a href="mailto:sales@shinajcb.ru" class="data__mail">sales@shinajcb.ru</a></p>
-          <p class="data-text">Для общей информации: <a href="mailto:cereda.c@gmail.com" class="data__mail">cereda.c@gmail.com</a></p>
-        </div>
-      </div>
-      <div class="data__work">
-        <h3 class="data-title">работаем</h3>
-        <div class="data__wrap">
-          <p class="data-text data-text--main">Ежедневно</p>
-          <p class="data-text">с 9:00 до 22:00</p>
-        </div>
-      </div>
-      <div class="data__come">
-        <h3 class="data-title">приезжайте!</h3>
-        <div class="data__wrap">
-          <div class="data__address">
-            <h4 class="data__name">Магазин выставка Запад:</h4>
-            <p class="data-text">Москва, Горбунова 12 к2 с8, ТЦ «МИРУС АВТО»</p>
-          </div>
-          <div class="data__address">
-            <h4 class="data__name">Склад Москва Восток:</h4>
-            <p class="data-text">г. Реутов, ул. Транспортная, 1, 2км от МКАД</p>
-          </div>
-          <div class="data__address">
-            <h4 class="data__name">Склад в Истре:</h4>
-            <p class="data-text">Московская область, Истринский район, п.&nbsp;Пионерский, ул&nbsp;Седьмая, д&nbsp;4, 43км от МКАД </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <div class="map" id="makemap_canvas"></div>
-    
-    <div class="data-container">
-      <section class="bank">
-        <h3 class="data-title">Банковские реквизиты</h3>
-        <p class="data-text">
-          ИП Середа Станислав Александрович<br>
-          ИНН 501710050964<br>
-          ОГРНИП 309501714500030<br>
-          Расчетный счет 4080&nbsp;42810&nbsp;40000&nbsp;40001&nbsp;41416<br>
-          Банк АО «Тинькофф Банк»<br>
-          Корр. счет Банка 30101810900000000974<br>
-          ИНН Банка 7710140679<br>
-          БИК Банка 044583974
-        </p>
-      </section>
 
-      <section class="docs">
-        <h3 class="data-title">Уставные документы</h3>
-        <div class="docs__wrap">
-          <img src="img/license-1.jpg" alt="Свидетельство" class="docs__img" width="212" height="300">
-          <img src="img/license-2.jpg" alt="Свидетельство" class="docs__img" width="212" height="300">
+    <section class="article article--internal">
+      <div class="article__body">
+        <picture>
+          <source media="(min-width: 1400px)" srcset="img/article-1-pc.jpg">
+          <source media="(min-width: 768px)" srcset="img/article-1-tablet.jpg">
+          <img src="img/article-1.jpg" alt="шины Solideal" class="article__pic" width="300" height="202">
+        </picture>
+        <p class="article__text">Мы проанализировали все вопросы, связанные с выбором шин на экскаваторы погрузчики и выделили не все, но, по крайней мере, основные проблемы.</p>
+        <h3 class="title-h3 title-h3--article">Определение размера: читайте статью «размеры шины для jcb 3cx»</h3>
+        <p class="article__text">Вкратце: когда Вы делали покупку, Вам было неважно, какие размеры стоят у Вашей техники. Но, как только техника встала по причине пореза или разрыва (взрыва) шины, в Ваших интересах вернуть технику в строй как можно быстрее. И вот тут Вы в первый раз тратите какое-то время на выяснение размера шин для Вашего экскаватора-погрузчика.</p>
+        <h3 class="title-h3 title-h3--article">Определение бюджета на покупку. Понятие «цена-качество»</h3>
+        <p class="article__text">Актуально особенно сейчас, когда цены на обслуживание техники взлетели, а стоимость часа аренды осталась на прежнем уровне. Очень часто говорят: а посоветуйте такую резину, чтобы «цена-качество» была. На нашем складе цены на все шины сто процентов соответствуют качеству. Скажите, сколько Вы готовы потратить на шину и получите от нас лучшее предложение.</p>
+        <p class="article__text">Выбор производителя шины: популярные марки.</p>
+        <p class="article__text">Эта тема соприкасается с выбором рисунка протектора и выбором поставщика. Почему Вы отдаете предпочтение тем или иным маркам и производителям?</p>
+        <p class="article__text">Чаще всего Вы покупаете то, что советует Вам Ваш менеджер. Да, если Ваша техника стоит на обслуживании в какой-нибудь компании, связанной, скажем, с каким-нибудь институтом у Вас есть менеджер. И он советует.</p>
+        <p class="article__text">Или Вы акула в мире шин. Вы покупаете их со времён олимпиады 80 и Вам не надо ничего советовать. Вы всегда знали, что лучшие шины делают во Франции (Шри Ланке, Индии, Америке, Польше, Китае, Франции или Чехии). Кстати, во Франции шины для экскаваторов погрузчиков не делают.</p>
+        <p class="article__text">Вот интересно: если есть «самый лучший завод» по производству шин на экскаваторы погрузчики. Зачем тогда остальные заводы? И, главное, зачем и почему у них покупают? Наверное, качество устраивает. Или цена. Вас какая цена устроит?</p>
+        <p class="article__text">Выбор рисунка протектора шины. На первый взгляд все просто: есть елочка, есть клюшка, есть шашка. Но все клюшки разные. И имеют разную площадь и расстояние между клюшками. Очень интересная тема будет раскрыта в будущей статье: "не все клюшки одинаково полезны".</p>
+      </div>
+      <div class="article__share">
+        <p class="article__date article__date--internal">26 февраля 2016 г.</p>
+        <div class="social-likes social-likes_notext">
+          <div class="vkontakte" title="Поделиться ссылкой во Вконтакте"></div>
+          <div class="facebook" title="Поделиться ссылкой на Фейсбуке"></div>
+          <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках"></div>
+          <div class="mailru" title="Поделиться ссылкой в Моём мире"></div>
+          <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе"></div>
+          <div class="twitter" title="Поделиться ссылкой в Твиттере"></div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <section class="read">
+      <h4 class="read__title">Читайте также:</h4>
+      <div class="read__wrap">
+        <a href="#" class="read__more">Алтайские шины для спецтехники большой шаг вперёд?</a>
+      </div>
+      <div class="read__wrap">
+        <a href="#" class="read__more">Выбор шин на экскаваторы погрузчики JCB и аналоги.</a>
+      </div>
+      <div class="read__wrap">
+        <a href="#" class="read__more">О пользе грыжи на шинах</a>
+      </div>
+    </section>
   </main>
   
   <footer class="contacts">
@@ -383,7 +360,7 @@
             <a href="#" class="footer-main__link">Новости</a>
           </li>
           <li class="footer-main__item">
-            <a class="footer-main__link">Контакты</a>
+            <a href="contacts.html" class="footer-main__link">Контакты</a>
           </li>
           <li class="footer-main__item">
             <a href="#" class="footer-main__link">Вопрос-Ответ</a>
@@ -420,33 +397,9 @@
   </div>
   <div class="modal-overlay"></div>
 
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/picturefill.min.js"></script>
   <script src="js/script.js"></script>
-  <script>
-    function initMap() {
-    var latlng = new google.maps.LatLng("55.740299", "37.381836");
-    var myOptions = {
-      zoom: 12,
-      center: latlng,
-      navigationControlOptions: {
-        style: google.maps.NavigationControlStyle.SMALL
-      },
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map = new google.maps.Map(document.getElementById("makemap_canvas"),myOptions);
-    map.scrollwheel = true;
-    map.setOptions({ mapTypeControl:true});
-    
-    var marker = new google.maps.Marker({
-      position: {lat: 55.740299, lng: 37.381836},
-      map: map,
-      title: "Custom marker",
-      icon: {
-        url: "img/pin.png",
-        scaledSize: new google.maps.Size(86, 107)
-      }
-    });
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeOpc6HENUQsgkICmD4ENtkQ6AOYLMnXE&callback=initMap" async defer></script>
+  <script src="js/social-likes.min.js"></script>
 </body>
 </html>

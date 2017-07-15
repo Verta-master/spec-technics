@@ -1,4 +1,6 @@
 .form {
+  width: 300px;
+  box-sizing: border-box;
   border: 3px solid @grey;
   margin: 20px 10px;
   padding: 25px;
@@ -38,7 +40,7 @@
 }
 
 .form__btn {
-  max-width: 100%;
+  width: 100%;
   margin-top: 20px;
 }
 
@@ -46,6 +48,7 @@
 
 @media @mobile {
   .form {
+    width: 440px;
     margin-top: 40px;
     margin-right: 20px;
     margin-left: 20px;
@@ -54,10 +57,6 @@
   .form__title {
     padding-left: 50px;
     padding-right: 50px;
-  }
-  
-  .form__btn {
-    width: 100%;
   }
 }
 

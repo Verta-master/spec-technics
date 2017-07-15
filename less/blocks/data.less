@@ -1,5 +1,6 @@
 .data {
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -96,11 +97,15 @@
   }
 }
 
+.data-container {
+  width: 100%;
+}
+
 //-------------Mobile-480----------------
 
 @media @mobile {
   .data {
-    width: 440px;
+    max-width: 440px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -161,7 +166,7 @@
 
 @media @tablet {
   .data {
-    width: 728px;
+    max-width: 728px;
     padding-top: 32px;
     justify-content: flex-start;
   }
@@ -190,7 +195,8 @@
   }
   
   .data-container {
-    width: 728px;
+    max-width: 728px;
+    width: 100%;
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 32px;
@@ -208,7 +214,7 @@
 
 @media @desktop {
   .data {
-    width: 960px;
+    max-width: 960px;
     padding-top: 35px;
     justify-content: space-between;
   }
@@ -236,7 +242,7 @@
   }
   
   .data-container {
-    width: 960px;
+    max-width: 960px;
     padding-top: 35px;
     padding-bottom: 0;
   }
@@ -246,7 +252,7 @@
 
 @media @pc {
   .data {
-    width: 1220px;
+    max-width: 1220px;
     padding-top: 58px;
     justify-content: flex-start;
   }
@@ -268,7 +274,7 @@
   }
   
   .data-container {
-    width: 1220px;
+    max-width: 1220px;
     padding-top: 55px;
     justify-content: flex-start;
     padding-bottom: 15px;

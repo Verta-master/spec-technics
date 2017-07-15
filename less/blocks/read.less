@@ -1,0 +1,81 @@
+.read {
+  width: 300px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-bottom: 40px;
+}
+
+.read__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: @blue;
+  text-transform: uppercase;
+}
+
+.read__more {
+  font-size: 18px;
+  font-weight: 300;
+  color: @blue;
+  background-image: linear-gradient(to right, rgba(77,130,164,0.33) 0, rgba(77,130,164,0.33) 100%);
+  background-position: 0 18px;
+  background-repeat: repeat-x;
+  background-size: 5px 5px;
+  
+  &:hover {
+    color: @orange;
+    background-image: none;
+  }
+}
+
+.read__wrap {
+  margin-bottom: 15px;
+}
+
+//-------------Mobile-480--------------
+
+@media @mobile {
+  .read {
+    width: 440px;
+  }
+  
+  .read__title {
+    margin-top: 0;
+  }
+}
+
+//-------------Tablet--------------------
+
+@media @tablet {
+  .read {
+    width: 728px;
+  }
+  
+  .read__title {
+    margin-bottom: 8px;
+  }
+}
+
+//-------------Desktop-----------------
+
+@media @desktop {
+  .read {
+    width: 960px;
+  }
+  
+  .read__title {
+    margin-bottom: 13px;
+  }
+}
+
+//-------------PC-----------------
+
+@media @pc {
+  .read {
+    width: 1220px;
+    padding-bottom: 60px;
+  }
+  
+  .read__wrap {
+    margin-bottom: 12px;
+  }
+}

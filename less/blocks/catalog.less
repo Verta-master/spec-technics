@@ -1,5 +1,6 @@
 .catalog {
-  width: 300px;
+  width: 320px;
+  box-sizing: border-box;
   padding: 0 10px;
   padding-top: 10px;
   margin: 0 auto;
@@ -92,13 +93,15 @@
   display: block;
   margin-top: 10px;
   margin-bottom: 30px;
+  margin-left: 0;
+  width: 300px;
 }
 
 //-------------Mobile-480--------------
 
 @media @mobile {
   .catalog {
-    width: 440px;
+    width: 480px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -139,14 +142,16 @@
   }
   
   .catalog__link {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    width: 440px;
     margin-bottom: 40px;
     
     &--main {
       width: 230px;
       margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
@@ -157,7 +162,6 @@
   .catalog {
     width: 768px;
     padding-top: 30px;
-    box-sizing: border-box;
   }
   
   .catalog__list {

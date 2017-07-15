@@ -1,10 +1,16 @@
 .article {
-  width: 300px;
+  width: 320px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 0 10px;
   padding-top: 25px;
   border-top: 1px solid @grey;
   border-bottom: 1px solid @grey;
+  
+  &--internal {
+    border: none;
+    padding-top: 18px;
+  }
 }
 
 .article__item {
@@ -50,17 +56,29 @@
   color: @grey;
   margin-bottom: 32px;
   margin-top: 0;
+  
+  &--internal {
+    margin-bottom: 15px;
+  }
+}
+
+.article__share {
+  margin-bottom: 40px;
 }
 
 //-------------Mobile-480--------------
 
 @media @mobile {
   .article {
-    width: 440px;
+    width: 480px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 30px;
     padding-bottom: 20px;
+    
+    &--internal {
+      padding-top: 20px;
+    }
   }
   
   .article__list {
@@ -84,6 +102,18 @@
     height: 140px;
     margin-bottom: 15px;
   }
+  
+  .article__pic {
+    width: 440px;
+    height: 296px;
+  }
+  
+  .article__share {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 //-------------Tablet----------------
@@ -91,7 +121,6 @@
 @media @tablet {
   .article {
     width: 768px;
-    box-sizing: border-box;
   }
   
   .article__item {
@@ -115,6 +144,12 @@
     width: 229px;
     height: 153px;
   }
+  
+  .article__pic {
+    width: 728px;
+    height: 488px;
+    margin-bottom: 10px;
+  }
 }
 
 //-------------Desktop-----------------
@@ -123,6 +158,10 @@
   .article {
     width: 1000px;
     padding-top: 40px;
+    
+    &--internal {
+      padding-top: 5px;
+    }
   }
   
   .article__img {
@@ -148,6 +187,21 @@
   .article__text span {
     display: inline;
   }
+  
+  .article__pic {
+    width: 479px;
+    height: 321px;
+  }
+  
+  .article__body picture {
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+  
+  .article__share {
+    padding-top: 5px;
+  }
 }
 
 //-------------PC-----------------
@@ -159,6 +213,10 @@
     padding-left: 30px;
     padding-top: 45px;
     padding-bottom: 25px;
+    
+    &--internal {
+      padding-top: 20px;
+    }
   }
   
   .article__item {
@@ -172,5 +230,15 @@
   
   .article__text b {
     display: inline;
+  }
+  
+  .article__pic {
+    width: 593px;
+    height: 398px;
+  }
+  
+  .article__body picture {
+    margin-top: 0;
+    margin-right: 30px;
   }
 }
