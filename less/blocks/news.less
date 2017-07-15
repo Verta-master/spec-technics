@@ -1,0 +1,83 @@
+.news {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+//-------------Mobile-480--------------
+
+@media @mobile {
+  .news {
+    max-width: 440px;
+  }
+  
+  .news__img {
+    width: 440px;
+    height: 295px;
+    margin-bottom: 10px;
+  }
+}
+
+//-------------Tablet----------------
+
+@media @tablet {
+  .news {
+    max-width: 728px;
+  }
+  
+  .news__img {
+    width: 282px;
+    height: 189px;
+    margin-right: 18px;
+  }
+  
+  .news__block {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2px;
+  }
+  
+  .news__text {
+    max-width: 400px;
+  }
+}
+
+//-------------Desktop-----------------
+
+@media @desktop {
+  .news {
+    max-width: 960px;
+  }
+  
+  .news__img {
+    margin-right: 30px;
+  }
+  
+  .news__text {
+    padding-top: 10px;
+    max-width: 650px;
+  }
+  
+  .news__block {
+    margin-bottom: 17px;
+  }
+}
+
+//-------------PC-----------------
+
+@media @pc {
+  .news {
+    max-width: 1220px;
+    padding-top: 30px;
+  }
+  
+  .news__text {
+    padding-top: 20px;
+    max-width: 900px;
+  }
+  
+  .news__block {
+    margin-bottom: 20px;
+  }
+}

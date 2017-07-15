@@ -1,0 +1,106 @@
+.pages {
+  max-width: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin-bottom: 62px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid @grey;
+  border-bottom: 1px solid @grey;
+}
+
+.pages__block {
+  font-size: 0;
+}
+
+.pages__link {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: @blue;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 35px;
+  
+  &:hover {
+    color: @orange;
+  }
+  
+  &--active,
+  &--active:hover {
+    color: #000;
+    background-color: @grey;
+    border-radius: 5px;
+  }
+}
+
+.pages__num {
+  width: 35px;
+}
+
+.pages__prev,
+.pages__next {
+  display: none;
+}
+
+.pages__dots {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 16px;
+  font-weight: 700;
+  color: @grey;
+}
+
+//-------------Mobile-480--------------
+
+@media @mobile {
+  .pages {
+    max-width: 440px;
+    justify-content: space-between;
+  }
+  
+  .pages__prev,
+  .pages__next {
+    display: inline-block;
+    vertical-align: middle;
+    
+    &:hover {
+      background-color: transparent;
+      color: @orange;
+    }
+  }
+  
+  .pages__link--disabled,
+  .pages__link--disabled:hover {
+    color: #fff;
+    cursor: default;
+  }
+}
+
+//-------------Tablet----------------
+
+@media @tablet {
+  .pages {
+    max-width: 728px;
+  }
+}
+
+//-------------Desktop-----------------
+
+@media @desktop {
+  .pages {
+    max-width: 960px;
+  }
+}
+
+//-------------PC-----------------
+
+@media @pc {
+  .pages {
+    max-width: 1220px;
+    margin-bottom: 85px;
+  }
+}
