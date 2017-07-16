@@ -1,0 +1,75 @@
+.parameters {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.parameters__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: @blue;
+  text-transform: uppercase;
+}
+
+.parameters__data {
+  font-size: 18px;
+}
+
+.parameters__data {
+  border-collapse: collapse;
+  border-bottom: 2px solid @grey;
+  
+  tr {
+    border-top: 1px solid @grey;
+  }
+  
+  td {
+    height: 40px;
+  }
+}
+
+//-------------Mobile-480----------------
+
+@media @mobile {
+  .parameters {
+    max-width: 440px;
+  }
+}
+
+//-------------Tablet----------------
+
+@media @tablet {
+  .parameters {
+    max-width: 728px;
+  }
+  
+  .parameters__data {
+    width: 100%;
+    
+    td {
+      width: 50%;
+    }
+  }
+}
+
+//-------------Desktop-----------------
+
+@media @desktop {
+  .parameters {
+    max-width: 960px;
+  }
+  
+  .parameters__data {
+    td {
+      padding-left: 15px;
+      height: 45px;
+    }
+  }
+}
+
+//-------------PC------------------------
+
+@media @pc {
+  .parameters {
+    max-width: 1220px;
+  }
+}

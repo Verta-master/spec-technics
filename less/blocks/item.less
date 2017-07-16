@@ -1,0 +1,165 @@
+.item {
+  max-width: 300px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.item__link {
+  color: @blue;
+  background-image: linear-gradient(to right, rgba(77,130,164,0.33) 0, rgba(77,130,164,0.33) 100%);
+  background-position: 0 14px;
+  background-repeat: repeat-x;
+  background-size: 5px 5px;
+  
+  &:hover {
+    color: @orange;
+    background-image: none;
+  }
+}
+
+.item__block,
+.item__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item__price {
+  font-size: 32px;
+  font-weight: 700;
+  color: @blue;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.item__btn {
+  width: 112px;
+  margin-bottom: 20px;
+}
+
+.item__social {
+  text-align: center;
+}
+
+//-------------Mobile-480----------------
+
+@media @mobile {
+  .item {
+    max-width: 440px;
+  }
+  
+  .item__slider img {
+    width: 440px;
+    height: 260px;
+  }
+  
+  .item__wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .item__btn {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  
+  .item__price {
+    margin: 0;
+  }
+}
+
+//-------------Tablet----------------
+
+@media @tablet {
+  .item {
+    max-width: 728px;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .item__slider {
+    width: 360px;
+  
+    img {
+      width: 360px;
+      height: 200px;
+    }
+  }
+  
+  .item__describe {
+    max-width: 50%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .item__text {
+    margin-top: 0;
+    padding-right: 10px;
+  }
+}
+
+//-------------Desktop-----------------
+
+@media @desktop {
+  .item {
+    max-width: 960px;
+  }
+  
+  .item__slider {
+    width: 480px;
+  
+    img {
+      width: 480px;
+      height: 280px;
+    }
+  }
+  
+  .item__describe {
+    justify-content: flex-start;
+  }
+}
+
+//-------------PC------------------------
+
+@media @pc {
+  .item {
+    max-width: 1220px;
+    padding-top: 45px;
+    padding-bottom: 20px;
+  }
+  
+  .item__slider {
+    width: 600px;
+  
+    img {
+      width: 600px;
+      height: 320px;
+    }
+  }
+  
+  .item__block {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .item__btn {
+    margin-left: 20px;
+    margin-right: 30px;
+  }
+  
+  .item__wrap {
+    margin-bottom: 0;
+  }
+  
+  .item__describe {
+    margin-left: 30px;
+  }
+}

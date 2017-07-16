@@ -243,6 +243,10 @@
     }
   }
   
+  .catalog__list--item .catalog__item:last-child {
+    display: none;
+  }
+  
   .catalog__img {
     width: 229px;
     height: 123px;
@@ -408,6 +412,18 @@
     
     .catalog__item:nth-child(3n) {
       padding-right: 0;
+    }
+  }
+  
+  .catalog__list--item .catalog__item:last-child {
+    display: flex;
+  }
+  
+  .catalog__list--item {
+    padding-bottom: 25px;
+    
+    .catalog__item::after {
+      display: none;
     }
   }
   
