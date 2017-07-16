@@ -27,11 +27,13 @@
   background-color: rgba(77,130,164,0.33);
 }
 
-.info-menu__link:hover {
+.info-menu__link:hover,
+.info-menu__link--active {
   color: @orange;
 }
 
-.info-menu__link:hover::after {
+.info-menu__link:hover::after,
+.info-menu__link--active::after {
   display: none;
 }
 
