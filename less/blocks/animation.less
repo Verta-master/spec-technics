@@ -1,3 +1,4 @@
+//----Подчеркивания
 @keyframes stretching {
   0% {
     height: 5px;
@@ -124,7 +125,7 @@
   animation-fill-mode: forwards;
 }
 
-/* Shutter Out Horizontal */
+// Shutter Out Horizontal ---Анимация кнопки
 .catalog__buy {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -165,7 +166,7 @@
   transform: scaleX(1);
 }
 
-/* Zoom In #1 */
+/// Zoom In #1 ----Анимация картинки товара
 .catalog__img {
 	-webkit-transform: scale(1);
 	transform: scale(1);
@@ -203,7 +204,7 @@
 
 @media @tablet {
   .category--sidebar {
-    border-right: 1px solid @grey;
+    border-right: 1px solid #eaecf1;
   }
 }
 
@@ -220,7 +221,7 @@
 
 @media @pc {
   .catalog__list--internal .catalog__item:nth-child(odd) {
-    border-left: 1px solid @grey;
+    border-left: 1px solid #eaecf1;
   }
   
   .catalog__list--internal .catalog__item:nth-child(3n+1) {
@@ -232,31 +233,31 @@
 
 .ui-state-default,
 .ui-slider .ui-slider-handle {
-  width: 0 !important;
-  height: 0 !important;
-  border-left: 8px solid transparent !important;
-	border-right: 8px solid transparent !important;
-	border-bottom: 16px solid @blue !important;
-  border-top: none !important;
-  background-color: transparent !important;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 16px solid @blue;
+  border-top: none;
+  background-color: transparent;
 }
 
 .ui-widget-header {
-  background: #4d82a4 !important;
+  background: #4d82a4;
 }
 
 .ui-slider-horizontal {
-  height: 3px !important;
+  height: 3px;
   max-width: 230px;
 }
 
 .ui-widget.ui-widget-content {
   background-color: #eaecf1;
-  border: none !important;
+  border: none;
 }
 
 .ui-corner-all {
-  border-radius: 0 !important;
+  border-radius: 0;
 }
 
 .ui-slider-horizontal .ui-slider-handle {
