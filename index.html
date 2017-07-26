@@ -5,6 +5,7 @@
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>JSB шина</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
 </head>
 <body>
   <header class="header-main">
@@ -912,5 +913,25 @@
     });
   </script>
   <script src="js/fotorama.js"></script>
+  <script>
+    function animationClick(element, animation){
+    element = $(element);
+    element.click(
+        function() {
+            element.addClass("animated " + animation);        
+            window.setTimeout( function(){
+                element.removeClass("animated " + animation);
+            }, 2000);         
+  
+        });
+    }
+  </script>
+  <script>
+    $(document).ready(function(){
+      $(".swiper-slide svg").each(function() {
+          animationClick(this, "fadeOutRight");
+      });
+    });
+  </script>
 </body>
 </html>
